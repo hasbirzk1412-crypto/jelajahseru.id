@@ -1,0 +1,113 @@
+:root {
+    --green: #1dbf73;
+    --blue: #3ba9ff;
+    --dark: #1f2937;
+    --radius: 16px;
+    --shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+/* GLOBAL */
+body {
+    font-family: "Poppins", sans-serif;
+    background: #f7fbff;
+    color: var(--dark);
+}
+
+.brand { color: var(--green); font-size: 20px; }
+
+/* NAVBAR */
+.navbar {
+    width: 100%;
+    padding: 18px 28px;
+    background: white;
+    box-shadow: var(--shadow);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+}
+
+.navbar a {
+    margin-left: 20px;
+    font-weight: 500;
+    color: var(--dark);
+    text-decoration: none;
+}
+.navbar a:hover { color: var(--green); }
+
+/* HERO */
+.hero {
+    background: linear-gradient(135deg, var(--blue), var(--green));
+    padding: 70px 20px;
+    text-align: center;
+    color: white;
+}
+
+.btn-main {
+    margin-top: 20px;
+    background: white;
+    color: var(--green);
+    padding: 12px 20px;
+    border-radius: var(--radius);
+    font-weight: bold;
+    text-decoration: none;
+}
+.btn-main:hover { transform: scale(1.05); }
+
+/* SECTIONS */
+section {
+    width: 92%;
+    max-width: 1000px;
+    background: white;
+    margin: 40px auto;
+    padding: 25px;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+}
+
+.paket-item { margin-bottom: 15px; }
+
+/* IG GRID */
+.ig-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px,1fr));
+    gap: 14px;
+}
+
+iframe { border-radius: var(--radius); }
+
+/* CTA */
+.cta-section {
+    text-align: center;
+}
+.cta-button {
+    display: inline-block;
+    background: var(--green);
+    padding: 12px 20px;
+    border-radius: var(--radius);
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+/* TESTIMONI */
+.testi-item {
+    background: #f3f9ff;
+    padding: 18px;
+    border-radius: var(--radius);
+    margin-bottom: 18px;
+}
+
+/* FAQ */
+.faq-item { margin-bottom: 15px; }
+
+/* FOOTER */
+footer {
+    background: var(--dark);
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 40px;
+}
